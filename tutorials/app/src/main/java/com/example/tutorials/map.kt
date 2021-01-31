@@ -15,6 +15,8 @@ fun main() {
     //keys
     print(map2.keys)
     print("\n")
+    print(map2.values)
+    print("\n")
 
     for(map in map2) {
         print(map.key)
