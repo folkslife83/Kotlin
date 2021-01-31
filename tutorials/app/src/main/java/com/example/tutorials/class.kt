@@ -20,6 +20,7 @@ fun main() {
 
     var person = Person(5,"Senti")
 
+    println(person.age)
     println(person.name)
 
 }
@@ -27,15 +28,15 @@ fun main() {
 class HelloClass {
     var age: Int = 0
 
-    //    init {
+    //    init {            // 데이터 초기화 호출되면 일단 값을 바꾼다 값을 넘길수 없다.
 //        age = 0
 //    }
 //
-    //def 생성자, 보조 생성자
-    constructor() //기본 생성자
+    //def 생성자, 보조 생성자 (Java)
+    constructor() // 기본 생성자 //초기화하는 두번째 방법. 값을 넘길수 있다. 이거 지우면 HelloClass() 호출불가
     constructor(age: Int) { //set
         this.age = age
     }//보조 생성자
 }
 
-data class Person(var age:Int, val name:String)
+data class Person(var age:Int, val name:String)  // val은 바꿀수 없는값
