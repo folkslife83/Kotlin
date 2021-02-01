@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 
-class MemoryBoardAdapter(private var mainActivity: Context, private var numPieces: Int) :
+class MemoryBoardAdapter(private val context: Context, private var numPieces: Int) :
         RecyclerView.Adapter<MemoryBoardAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view : View! = LayoutInflater.from(context).inflate(R.layout.memory_card, parent, false)
+        val view = LayoutInflater.from(context).inflate(R.layout.memory_card, parent, false)
         
         return ViewHolder(view)
     }
