@@ -27,11 +27,18 @@ fun main() {
     // val greet = { println("Hello World!")} //추론 가능
     val square: (Int) -> Int = {x -> x*x} //매개변수가 하나인 경우
     greet()
+
     println(square(7))
+
 
     val nestedLambda: ()->()->Unit = {{ println("nested")}} // 람다식 안에 람다식
     // val nestedLambda = {{ println("nested")}} // 추론가능
     nestedLambda()()  //nestedLambda 의 호출 방식
+
+    val nestedLambda2: ()->(x:Int)->Int = {{ 20}} // 람다식 안에 람다식
+    val nested = nestedLambda2()(3)
+    println(nested)
+
 
 
     
