@@ -1,8 +1,8 @@
-package com.example.tutorials
+package com.example.tutorials.basic
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import java.util.concurrent.ExecutorService
+import com.example.tutorials.R
 import java.util.concurrent.Executors
 import java.util.concurrent.FutureTask
 

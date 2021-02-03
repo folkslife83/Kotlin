@@ -1,4 +1,4 @@
-package com.example.tutorials
+package com.example.tutorials.basic
 
 fun main() {
 

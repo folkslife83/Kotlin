@@ -1,4 +1,4 @@
-package com.example.tutorials.high
+package com.example.tutorials.LambdaFnHighOrder.high
 
 fun main(){
     var result1: Int

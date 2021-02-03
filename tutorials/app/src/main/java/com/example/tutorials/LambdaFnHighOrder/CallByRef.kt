@@ -1,4 +1,4 @@
-package com.example.tutorials.ref
+package com.example.tutorials.LambdaFnHighOrder
 
 fun main(){
     val res1 = funcParam(3,2, ::sum)
