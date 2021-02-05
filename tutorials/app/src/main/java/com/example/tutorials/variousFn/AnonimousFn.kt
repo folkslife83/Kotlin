@@ -1,6 +1,7 @@
-package chap03.section5.extras
+package com.example.tutorials.variousFn
 
 fun main() {
+    // fun (x: Int, y: Int): Int = x + y // 함수 이름이 생략된 익명 함수
 
     // 1. 선언부 포함 익명 함수
     val add: (Int, Int) -> Int = fun(x, y) = x + y

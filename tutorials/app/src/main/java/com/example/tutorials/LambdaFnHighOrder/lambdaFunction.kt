@@ -23,7 +23,7 @@ fun main() {
     result1 = multi3(6,7)
     println(result1) //실행 안할경우 multi3 의 "x * y"만 실행, 출력된다, 실행할경우 곱셈결과도 출력
 
-    val greet: () -> Unit = { println("Hello World!")} // 반환자료형이 없는경우
+    val greet: () -> Unit = { println("Hello World!")} // () -> Unit 반환자료형이 없는경우
     // val greet = { println("Hello World!")} //추론 가능
     val square: (Int) -> Int = {x -> x*x} //매개변수가 하나인 경우
     greet()
