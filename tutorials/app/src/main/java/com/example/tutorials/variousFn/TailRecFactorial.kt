@@ -1,4 +1,8 @@
-package com.example.tutorials.variousFn
+package com.example.tutorials.variousFn.tailrec
+
+import com.example.tutorials.variousFn.getFibo
+import java.math.BigInteger
+
 /**
 재귀 함수의 필수 조건
 - 무한 호출에 빠지지 않도록 탈출 조건을 만들어 둔다
@@ -10,8 +14,17 @@ package com.example.tutorials.variousFn
 fun main() {
     val number = 5
     println("Factorial: $number -> ${factorial(number)}")
+    println(getFibo2(10000, BigInteger("0"), BigInteger("1")))
+
 }
 
 tailrec fun factorial(n: Int, run: Int = 1): Long {
     return if (n == 1) run.toLong() else factorial(n-1, run*n)
+}
+
+tailrec fun getFibo2(n: Int, a: BigInteger, b: BigInteger): BigInteger {
+    if (n == 0)
+        return a
+    else
+        return getFibo2(n-1, b, a+b)
 }
