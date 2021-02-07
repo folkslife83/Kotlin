@@ -3,6 +3,8 @@ package com.example.tutorials.Dimo
 fun main(){
     var t = Tiger()
     t.eat()
+    var a = Animal()
+    a.eat()
 }
 
 open class Animal{
