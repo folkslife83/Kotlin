@@ -11,8 +11,8 @@ files:
       length: 6
       offset: 92
     initialized_from_dependency: false
-    selected: true
-    status: Solved
+    selected: false
+    status: Unchecked
     encrypted_possible_answer: '"""\d{2} $month \d{4}"""'
   text: |
     val month = "(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)"

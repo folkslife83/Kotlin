@@ -1,4 +1,4 @@
-package chap03.section5.tailrec
+package chap03.section5
 
 fun main() {
     val number = 5
