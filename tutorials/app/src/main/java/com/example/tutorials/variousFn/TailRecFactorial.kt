@@ -12,12 +12,12 @@ import java.math.BigInteger
  */
 
 fun main() {
-    val number = 5
+    val number = 10
     println("Factorial: $number -> ${factorial(number)}")
-    println(getFibo2(10000, BigInteger("0"), BigInteger("1")))
+    println(getFibo2(number, BigInteger("0"), BigInteger("1")))
 
 }
-
+//스택을 사용하지 않음
 tailrec fun factorial(n: Int, run: Int = 1): Long {
     return if (n == 1) run.toLong() else factorial(n-1, run*n)
 }
