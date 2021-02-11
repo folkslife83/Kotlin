@@ -1,7 +1,7 @@
 package com.example.tutorials.Dimo.Data
 //equals(), hashcode(), toString(), copy(),componentX() 자동구현
 fun main(){
-    //copy()
+    copy()
     //compX()
 }
 fun copy(){

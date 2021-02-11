@@ -51,7 +51,7 @@ files:
       length: 4
       offset: 212
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: Expr()
   text: |-
