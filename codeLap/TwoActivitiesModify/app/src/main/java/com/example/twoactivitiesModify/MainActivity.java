@@ -1,5 +1,6 @@
 package com.example.twoactivitiesModify;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-
+// 로그검색어 D/MainActivity|D/SecondActivity
 //The Intent extras are key/value pairs in a Bundle.
 public class MainActivity extends AppCompatActivity {
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
@@ -25,10 +26,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mMessageEditText = findViewById(R.id.editText_main);
 
+        Log.d(LOG_TAG, "-------");
+        Log.d(LOG_TAG, "onCreate");
+        // Initialize all the view variables.
+        mMessageEditText = findViewById(R.id.editText_main);
         mReplyHeadTextView = findViewById(R.id.text_header_reply);
         mReplyTextView = findViewById(R.id.text_message_reply);
+        // Restore the state.
+        if (savedInstanceState != null) {
+            boolean isVisible =
+                    savedInstanceState.getBoolean("reply_visible");
+            if (isVisible) {
+                mReplyHeadTextView.setVisibility(View.VISIBLE);
+                mReplyTextView.setText(savedInstanceState.getString("reply_text"));
+                mReplyTextView.setVisibility(View.VISIBLE);
+            }
+        }
     }
     public void launchSecondActivity(View view) {
         Log.d(LOG_TAG, "Button clicked!");
@@ -56,5 +70,51 @@ public class MainActivity extends AppCompatActivity {
         Log.d(LOG_TAG, "Challenge Button clicked!");
         Intent intent = new Intent(this, ChallengeActivity.class);
         startActivity(intent);
+    }
+    @Override
+    public void onStart(){
+        super.onStart();
+        Log.d(LOG_TAG, "onStart");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(LOG_TAG, "onPause");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(LOG_TAG, "onRestart");
+    }
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        Log.d(LOG_TAG, "onPostResume");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(LOG_TAG, "onStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(LOG_TAG, "onDestroy");
+    }
+    //to preserve the instance state
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        //Check to see if the header is currently visible
+        if (mReplyHeadTextView.getVisibility() == View.VISIBLE) {
+            //put that visibility state into the state Bundle
+            outState.putBoolean("reply_visible", true);
+            outState.putString("reply_text",mReplyTextView.getText().toString());
+        }
     }
 }

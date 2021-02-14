@@ -1,4 +1,4 @@
-#Sat Feb 13 12:27:49 KST 2021
+#Sat Feb 13 13:32:27 KST 2021
 base.0=C\:\\Git\\Kotlin\\CodeLap\\ActivitySceneTransitionBasic\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

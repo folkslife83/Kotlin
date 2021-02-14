@@ -48,6 +48,7 @@ public class DetailActivity extends AppCompatActivity {
 
     private Item mItem;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,6 +71,12 @@ public class DetailActivity extends AppCompatActivity {
         // END_INCLUDE(detail_set_view_name)
 
         loadItem();
+
+        // Todo ( Explain - load)
+//        TextView itemExp;
+//        itemExp = (TextView)findViewById(R.id.item_explain);
+//        itemExp.setText(R.string.expText_01);
+
     }
 
     private void loadItem() {

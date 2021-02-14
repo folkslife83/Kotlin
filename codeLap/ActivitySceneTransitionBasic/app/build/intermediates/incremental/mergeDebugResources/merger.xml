@@ -2633,7 +2633,7 @@
         Fatback porchetta pork loin meatball, turducken pork chop drumstick boudin. Kevin tri-tip
         ground round corned beef, ribeye swine filet mignon salami pork spare ribs pork chop
         brisket. Filet mignon shankle t-bone bacon. Turducken capicola turkey porchetta kielbasa
-        shank pork loin jerky venison tenderloin boudin ham hock ground round.</string><string name="image_header">%1$s by %2$s</string></file><file path="C:\Git\Kotlin\CodeLap\ActivitySceneTransitionBasic\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light">
+        shank pork loin jerky venison tenderloin boudin ham hock ground round.</string><string name="image_header">%1$s by %2$s</string><string name="expText_01">I changed it</string></file><file path="C:\Git\Kotlin\CodeLap\ActivitySceneTransitionBasic\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light">
         
         <item name="android:windowSharedElementEnterTransition" ns2:ignore="NewApi">
             @transition/grid_detail_transition

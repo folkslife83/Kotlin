@@ -9,13 +9,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TwoActivities">
-        <activity android:name=".SecondActivity"
-            android:label = "@string/activity2_name"
+
+        <activity android:name=".Passage1"
+            android:label="@string/activityCh1_name"
+            android:parentActivityName=".ChallengeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.twoactivities.ChallengeActivity" />
+        </activity>
+        <activity android:name=".Passage2"
+            android:label="@string/activityCh2_name"
+            android:parentActivityName=".ChallengeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.twoactivities.ChallengeActivity" />
+        </activity>
+        <activity android:name=".Passage3"
+            android:label="@string/activityCh3_name"
+            android:parentActivityName=".ChallengeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.twoactivities.ChallengeActivity" />
+        </activity>
+        <activity
+            android:name=".ChallengeActivity"
+            android:label="@string/activity3_name"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=
-                    "com.example.twoactivities.MainActivity" />
+                android:value="com.example.twoactivities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:label="@string/activity2_name"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.twoactivities.MainActivity" />
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>

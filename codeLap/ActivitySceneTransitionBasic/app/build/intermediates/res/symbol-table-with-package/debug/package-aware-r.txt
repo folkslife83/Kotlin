@@ -661,6 +661,7 @@ id imageview_header
 id imageview_item
 id info
 id italic
+id item_explain
 id left
 id line1
 id line3
@@ -817,6 +818,7 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
 string bacon_ipsum
+string expText_01
 string image_header
 string intro_message
 string search_menu_title

@@ -47,10 +47,10 @@
             android:theme="@style/Theme.AppCompat" />
 
         <TextView
+            android:id="@+id/item_explain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:text="@string/bacon_ipsum"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     </LinearLayout>

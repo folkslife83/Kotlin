@@ -1,3 +1,11 @@
 https://developer.android.com/courses/fundamentals-training/toc-v2
-앱 레이아웃 에디터- 01.3: Text and scrolling views
-https://developer.android.com/codelabs/android-training-text-and-scrolling-views?index=..%2F..%2Fandroid-training#0
+앱 레이아웃 에디터-03.2: Unit tests
+https://developer.android.com/codelabs/android-training-unit-tests?index=..%2F..%2Fandroid-training#2
+
+
+안드로이드 스튜디오
+- 프로젝트 복사하는 방법
+https://google-developer-training.github.io/android-developer-fundamentals-course-concepts-v2/appendix/appendix-utilities/appendix-utilities.html#copy_project
+
+안드로이드 코드랩 정답모음
+https://github.com/MahakAggarwal/Android-Developer-Fundamentals-Version-2

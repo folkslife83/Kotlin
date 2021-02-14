@@ -19,28 +19,39 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ScrollView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/text_header_Passage1"
-        tools:layout_editor_absoluteX="72dp">
+        android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/item1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/item1"
+            android:onClick="launchItem1"/>
 
-            <TextView
-                android:id="@+id/article1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
-                android:padding="10dp"
-                android:autoLink="web"
-                android:lineSpacingExtra="5sp"
-                android:text="@string/passage1"/>
+        <Button
+            android:id="@+id/item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/item2"
+            android:onClick="launchItem2"/>
 
-        </LinearLayout>
-    </ScrollView>
+        <Button
+            android:id="@+id/item3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/item3"
+            android:onClick="launchItem3"/>
+
+    </LinearLayout>
+
 
 </RelativeLayout>
