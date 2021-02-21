@@ -1,7 +1,10 @@
 https://developer.android.com/courses/fundamentals-training/toc-v2
-앱 레이아웃 에디터-03.2: Unit tests
-https://developer.android.com/codelabs/android-training-unit-tests?index=..%2F..%2Fandroid-training#2
+앱 레이아웃 에디터-04.2: Input controls
+https://developer.android.com/codelabs/android-training-input-controls?index=..%2F..%2Fandroid-training#3
 
+03.2: Unit tests // challenge 
+https://developer.android.com/codelabs/android-training-unit-tests?index=..%2F..%2Fandroid-training#4
+Challenge 2: Sometimes it's difficult to isolate a unit of code from all of its external dependencies. Rather than organize your code in complicated ways just so you can test it more easily, you can use a mock framework to create fake ("mock") objects that pretend to be dependencies. Research the Mockito framework, and learn how to set it up in Android Studio. Write a test class for the calcButton() method in SimpleCalc, and use Mockito to simulate the Android context in which your tests will run.
 
 안드로이드 스튜디오
 - 프로젝트 복사하는 방법
